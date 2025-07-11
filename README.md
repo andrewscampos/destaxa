@@ -7,7 +7,25 @@ Este projeto é responsável por realizar a autorização de transações de pag
 ## ✅ Requisitos
 
 - **Java 22** (versão mínima obrigatória) 
+- **Projeto API** esta sendo exposto na porta 9000 
 
+### 🔁 Exemplo de requisição
+
+```bash
+curl -X POST http://localhost:9000/authorization \
+  -H "Content-Type: application/json" \
+  -H "x-identifier: 324234324" \
+  -d '{
+    "external_id": "abc123",
+    "value": 10000.0,
+    "card_number": "4111111111111111",
+    "installments": 1,
+    "cvv": "123",
+    "exp_month": 12,
+    "exp_year": 25,
+    "holder_name": "João da Silva"
+  }'
+  ```
 ---
 
 ## ⚠️ Importante
