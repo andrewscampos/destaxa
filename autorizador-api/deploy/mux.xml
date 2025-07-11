@@ -1,0 +1,5 @@
+<mux class="org.jpos.q2.iso.QMUX" name="dx-mux" logger="Q2">
+    <in>my-channel-adaptor-out</in>
+    <out>my-channel-adaptor-in</out>
+    <ready-transmit>true</ready-transmit>
+</mux>
